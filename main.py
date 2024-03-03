@@ -6,7 +6,7 @@ from os import getenv
 from dotenv import load_dotenv
 import logging
 
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.messages = True
 intents.guilds = True
 
