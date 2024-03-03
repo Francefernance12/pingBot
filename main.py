@@ -41,7 +41,7 @@ async def schedule_pings(channel):
     while True:
         # Calculate the time until the next scheduled ping (8:53 pm or the next multiple of 3 hours)
         now = datetime.now()
-        next_ping_time = datetime(now.year, now.month, now.day, hour=8, minute=24)
+        next_ping_time = datetime(now.year, now.month, now.day, hour=8, minute=52)
         print(next_ping_time)
 
         while now >= next_ping_time:
